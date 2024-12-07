@@ -1,3 +1,3 @@
-df <- read.delim("./day1.txt", sep ="", header = FALSE)
-sum(abs(sort(df$V1)-sort(df$V2))) #Part1
-sum(df$V1 * sapply(df$V1, function(x) sum(df$V2 == x))) #Part2
+input_filename <- "C:/Users/leoal/Documents/aoc2024/day2/day2.txt"
+input <- lapply(unlist(lapply(readLines(input_filename), strsplit, split = " "), recursive = FALSE), as.numeric)
+input
